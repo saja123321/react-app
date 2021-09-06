@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Component } from 'react'
 
 export class HornedBeast extends Component {
@@ -11,7 +12,6 @@ export class HornedBeast extends Component {
             {this.props.disc}
             </p>
             </>
-
         )
     }
 }

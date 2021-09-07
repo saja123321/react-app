@@ -3,30 +3,29 @@ import HornedBeast from './HornedBeast'
 class Main extends Component {
     render() {
         let  movies = [
-            {    movieName:'Knives Out',
-                src : 'https://images-na.ssl-images-amazon.com/images/I/81bCcdEhfCL._AC_SY741_.jpg' ,
-                disc : ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quam voluptatum voluptate quibusdam quidem fuga accusantium alias eum praesentium placeat sed omnis, a modi rem quisquamex minus nostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum consequunturdebitis repellendus ostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum nisi'
+            {    Name:'UniWhal',
+                src : 'http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg' ,
+                disc : 'A unicorn and a narwhal nuzzling their horns'
 
             },
               {
-                movieName : 'Don\'t Breathe 2',
-                src : 'https://media2.fdncms.com/tucsonweekly/imager/u/zoom/31108568/dont-breathe-2.jpg?cb=1628151327' ,
-                disc : ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quam voluptatum voluptate quibusdam quidem fuga accusantium alias eum praesentium placeat sed omnis, a modi rem quisquamex minus nostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum consequunturdebitis repellendus ostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum nisi'
+                Name : 'Rhino Family',
+                src : 'https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80' ,
+                disc : 'Mother (or father) rhino with two babies'
 
             },
             {
-                movieName : ' Hell Fest',
-                src : 'https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZSUSK8j5ZBC4vnAX-1qUiuagElnH76v568oGb4PKXQuQVbMtnLFkzFnuC_0-_ODm5UhvXPIy-_Q8_GKpF4BdnazOX8.jpg?r=848',
-                disc : ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quam voluptatum voluptate quibusdam quidem fuga accusantium alias eum praesentium placeat sed omnis, a modi rem quisquamex minus nostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum consequunturdebitis repellendus ostrum obcaecati! Iure aut quas adipisci non, minima, qui excepturi rerum nisi'
+                Name : ' Unicorn Head',
+                src : 'https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"',
+                disc : ' Someone wearing a creepy unicorn head mask'
 
             }
         ];
         return (
             
             <div id="m">
-            <p> HORROR MOVIES </p>
           {  movies.map(e => {
-                 return  <HornedBeast movieName={e.movieName} src={e.src} disc={e.disc}/>
+                 return  <HornedBeast Name={e.Name} src={e.src} disc={e.disc}/>
             })
             }
             </div>

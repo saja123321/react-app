@@ -6,8 +6,8 @@ export class HornedBeast extends Component {
        
         return (
             <>
-            <h4> Movie Name {this.props.movieName}</h4>
-            <img alt={'movie image'} title={this.props.movieName} src={this.props.src} />
+            <h4>{this.props.Name}</h4>
+            <img alt='HornedBeast' title={this.props.Name} src={this.props.src} />
             <p>
             {this.props.disc}
             </p>

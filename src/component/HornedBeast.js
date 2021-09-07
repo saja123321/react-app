@@ -10,7 +10,6 @@ export class HornedBeast extends Component {
 
     imageClick = () => {  
         this.setState({
-         
             Like1:this.state.Like1+1
         })
      }    
@@ -20,7 +19,7 @@ export class HornedBeast extends Component {
             <>
 
             <h4>{this.props.Name}</h4>
-            <img alt='HornedBeast' title={this.props.Name} src={this.props.src} />
+            <img alt='HornedBeast' title={this.props.Name} src={this.props.src} onClick={this.imageClick} />
 
             <p >Like={this.state.Like1} </p>
             <p>

@@ -13,9 +13,8 @@ class Main extends Component {
         return (
             
             <div id="m">
-            <p> HORROR MOVIES </p>
           {   data.map( e => {
-                 return ( <HornedBeast movieName={e.title} src={e.image_url} disc={e.description}  />)
+                 return ( <HornedBeast Name={e.title} src={e.image_url} disc={e.description}  />)
             })
             }
             </div>

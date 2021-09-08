@@ -5,7 +5,6 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 import Main from './component/Main';
 import Data from './component/data.json';
-import FormCompnent from './component/FormCompnent'
 import SelectedBeast from './component/SelectedBeast';
 
 import React, { Component } from 'react'
@@ -49,7 +48,6 @@ class App extends Component {
     return (
       <>
         <Header />
-        {/* <FormCompnent data={Data} showHorns={this.showHorns } /> */}
         <Main data={this.state.data} show={this.show} showHorns={this.showHorns }/>
         <SelectedBeast 
         handleClose={this.handleClose}

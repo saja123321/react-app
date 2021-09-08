@@ -25,11 +25,12 @@ class App extends Component {
       showModal: false
     })
   }
-  show = (name, mDisc) => {
+  show = (name, src ,mDisc) => {
     this.setState({
       showModal: true,
       name: name,
-       mDisc: mDisc
+      src : src,
+      mDisc: mDisc
 
     })
   }
@@ -42,7 +43,7 @@ class App extends Component {
         handleClose={this.handleClose}
         showModal={this.state.showModal} 
         name={this.state.name}
-        mSrc={this.state.mSrc}
+        mSrc={this.state.src}
         mDisc={this.state.mDisc} 
         />
         <Footer />

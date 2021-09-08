@@ -10,8 +10,9 @@ export class HornedBeast extends Component {
     }
     getHandleOpen = () => {
         let name = this.props.Name
-        let disc = this.props.disc
-        this.props.show(name, disc);
+        let mSrc = this.props.src;
+        let mdisc = this.props.disc
+        this.props.show(name,mSrc, mdisc);
 
     }
 

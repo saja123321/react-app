@@ -13,10 +13,8 @@ class Main extends Component {
         let aniHorns = Number(e.target.value);
         filteredData = allData.filter(h => {
 
-            if (aniHorns > 0) {
-                console.log(aniHorns)
-                return (h.horns === aniHorns)
-            }
+            return (h.horns === aniHorns)
+
         })
         console.log(filteredData)
         if (filteredData.length === 0) {
